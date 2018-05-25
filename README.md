@@ -1,21 +1,19 @@
-# my-firstproject
+# toDoListByVUE
 
-> this is my first project
+> A todo list implemented via vue
 
-## Build Setup
-
-``` bash
-# install dependencies
-npm install
-
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
+环境配置过程如下，使用webpack的项目模板
+```
+# 全局安装vue-cli
+$ npm install –g vue-cli
+# 创建一个基于”webpack”模板的新项目
+$ vue init webpack my-project
+# 安装依赖
+$ cd my-project
+$ npm install (自动安装所有需要的依赖)
+$ npm run dev
 ```
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+主要用到了v-model、v-on、v-for和v-bind语句，具体实现在App.vue里面 最终效果如下，在编辑框输入内容即可添加待办事项，完成的事项在上面点击一下，就会出现下划线标记完成
+
+<img src="https://github.com/double518/img-floder/blob/master/todolist.jpeg?raw=true" width=500px></img>
